@@ -1,0 +1,28 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:23:53: not found: value document
+[error]                 @routes.FreelancerController.search(document.getElementById("query").value)
+[error]                                                     ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:24:53: not found: value inputKeyword
+[error]                 @routes.FreelancerController.search(inputKeyword)
+[error]                                                     ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Canceling execution...
+[debug] Forcing garbage collection...
+[warn] In the last 1243 seconds, 5.263 (0.4%) were spent in GC. [Heap: 0.53GB free of 0.63GB, max 1.33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[error] Cancelled: run
+[error] Cancelled: run
+[error] Use 'last' for the full log.
+[debug] > Exec(idea-shell, None, None)

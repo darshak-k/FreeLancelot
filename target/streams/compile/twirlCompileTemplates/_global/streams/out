@@ -1,0 +1,3 @@
+[error] [Error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:44
+[error] 				<a href="/globalStats}" target="_blank"> Global Stats </a>: Not parsed?
+[error] (Compile / twirlCompileTemplates) Twirl compilation failed

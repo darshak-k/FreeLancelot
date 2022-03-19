@@ -1,0 +1,12 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 7 Scala sources and 4 Java sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:83:1: incompatible types: java.util.ArrayList<models.FreelancerProject> cannot be converted to play.twirl.api.Html
+[error] projects
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:93:1: incompatible types: cannot infer type arguments for java.util.ArrayList<>
+[error]     reason: no instance(s) of type variable(s) E exist so that java.util.ArrayList<E> conforms to play.twirl.api.Html
+[info] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[error] Total time: 2 s, completed 12 Mar, 2022 5:56:54 PM
+[debug] > Exec(idea-shell, None, None)

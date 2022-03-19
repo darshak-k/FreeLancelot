@@ -1,0 +1,436 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:76:1: incompatible types: java.util.List<models.FreelancerProject> cannot be converted to java.util.List<models.SearchResult>
+[error] projects
+[info] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:90:1: incompatible types: java.lang.String cannot be converted to java.util.List<models.SearchResult>
+[error] ""
+[info] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:73:1: missing return statement
+[error] {
+[error] 		JSONArray jsonObject = null;
+[error] 
+[error] //		inputKeyword = inputKeyword.replace(" ", "%");
+[error] 		try {
+[error] 			String URL = baseURL + "/projects/0.1/projects/active";
+[error] 			CompletionStage<WSResponse> responseA = ws.url(URL)
+[error] 					.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+[error] 					.addQueryParameter("job_details", "true").addQueryParameter("query", inputKeyword).get()
+[error] 					.thenApplyAsync(result -> {
+[error] 						JsonNode rootNode = result.asJson();
+[error] 						ObjectMapper mapper = new ObjectMapper();
+[error] 						mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+[error] 
+[error] 						try {
+[error] 							APIResponse project = mapper.treeToValue(rootNode, APIResponse.class);
+[error] 
+[error] 							projects = project.getResult().getProjects();
+[error] 
+[error] 							SearchResult searchResult = new SearchResult();
+[error] 							searchResult.setQuery(inputKeyword);
+[error] 							searchResult.setProjects(projects);
+[error] 
+[error] 							searchResults.add(searchResult);
+[error] 						} catch (JsonProcessingException e) {
+[error] 							e.printStackTrace();
+[error] 						}
+[error] 
+[error] 						return result;
+[error] 					});
+[error] 		} catch (Exception e) {
+[error] 			e.printStackTrace();
+[error] 		}
+[error] 	}
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:9:1: value globalStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.globalStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /globalStats                controllers.FreelancerController.globalStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:10:1: value localStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.localStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /localStats                controllers.FreelancerController.localStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:11:1: value skills is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.skills? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /skills/:skillName                controllers.FreelancerController.skills(skillName: String)
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] four errors found
+[debug] Forcing garbage collection...
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:9:1: value globalStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.globalStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /globalStats                controllers.FreelancerController.globalStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:10:1: value localStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.localStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /localStats                controllers.FreelancerController.localStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:11:1: value skills is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.skills? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /skills/:skillName                controllers.FreelancerController.skills(skillName: String)
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:9:1: value globalStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.globalStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /globalStats                controllers.FreelancerController.globalStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:10:1: value localStates is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.localStates? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /localStats                controllers.FreelancerController.localStates()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:11:1: value skills is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.skills? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /skills/:skillName                controllers.FreelancerController.skills(skillName: String)
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:9:1: value globalStats is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.globalStats? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /globalStats                controllers.FreelancerController.globalStats()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:10:1: value localStats is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.localStats? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /localStats                controllers.FreelancerController.localStats()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:11:1: value skills is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.skills? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /skills/:skillName                controllers.FreelancerController.skills(skillName: String)
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:9:1: value globalStats is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.globalStats? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /globalstats                controllers.FreelancerController.globalStats()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:10:1: value localStats is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.localStats? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /localstats                 controllers.FreelancerController.localStats()
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes:11:1: value skills is not a member of controllers.FreelancerController
+[error] did you mean controllers.FreelancerController.skills? Static Java members belong to companion objects in Scala;
+[error] they are not inherited, even by subclasses defined in Java.
+[error] GET     /skills/:skillName          controllers.FreelancerController.skills(skillName: String)
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] four errors found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:57:30: not found: value project
+[error] 					<a href="/globalStats/@{project.getOwner_id()}" target="_blank"> Global Stats </a>
+[error] 					                        ^
+[error] one error found
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 4 Scala sources and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source and 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\models\SearchResult.java:12:1: class, interface, or enum expected
+[error] protected 
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\models\SearchResult.java:13:1: <identifier> expected
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Java source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Forcing garbage collection...
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] In the last 7 seconds, 5.317 (78.5%) were spent in GC. [Heap: 0.35GB free of 0.51GB, max 1.33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true

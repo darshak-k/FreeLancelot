@@ -1,0 +1,11 @@
+[debug] > Exec(activator clean compile, None, None)
+[error] Expected ID character
+[error] Not a valid command: activator
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: activator (similar: artifact, artifacts, bgWaitFor)
+[error] activator clean compile
+[error]          ^
+[debug] > Exec(idea-shell, None, None)

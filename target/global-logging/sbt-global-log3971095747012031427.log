@@ -1,0 +1,49 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[warn] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:13:50: symbol literal is deprecated; use Symbol("class") instead
+[warn]         @helper.inputText(searchForm("keyword"), 'class -> "col-xs-2", 'placeholder ->"Enter search terms")
+[warn]                                                  ^
+[warn] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\index.scala.html:13:72: symbol literal is deprecated; use Symbol("placeholder") instead
+[warn]         @helper.inputText(searchForm("keyword"), 'class -> "col-xs-2", 'placeholder ->"Enter search terms")
+[warn]                                                                        ^
+[warn] two warnings found
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Java sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[info] compiling 1 Scala source to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\search.scala.html:15:40: value getOwnerId is not a member of models.FreelancerProject
+[error]                 <p> Owner ID: @project.getOwnerId()</p>
+[error]                                        ^
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\search.scala.html:16:44: value getCreatedDate is not a member of models.FreelancerProject
+[error]                 <p> Created Date: @project.getCreatedDate() </p>
+[error]                                            ^
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\search.scala.html:17:37: value getTitle is not a member of models.FreelancerProject
+[error]                 <p> Title: @project.getTitle() </p>
+[error]                                     ^
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\views\search.scala.html:18:36: value getProjectType is not a member of models.FreelancerProject
+[error]                 <p> Type: @project.getProjectType() </p>
+[error]                                    ^
+[error] four errors found
+[debug] Forcing garbage collection...
+[error] (Compile / compileIncremental) Compilation failed
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source and 2 Java sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[info] done compiling
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:freelancelot
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Canceling execution...
+[debug] Forcing garbage collection...
+[error] Cancelled: run
+[error] Cancelled: run
+[error] Use 'last' for the full log.
+[debug] > Exec(idea-shell, None, None)

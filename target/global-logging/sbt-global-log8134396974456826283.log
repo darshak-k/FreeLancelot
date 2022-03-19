@@ -1,0 +1,8 @@
+[debug] > Exec(rrun, None, None)
+[error] Not a valid command: rrun (similar: runProd)
+[error] Not a valid project ID: rrun
+[error] Expected ':'
+[error] Not a valid key: rrun (similar: run, rpmPreun, runner)
+[error] rrun
+[error]     ^
+[debug] > Exec(idea-shell, None, None)

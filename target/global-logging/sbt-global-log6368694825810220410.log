@@ -1,0 +1,98 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 7 Scala sources and 4 Java sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:7:1: package org.apache.http does not exist
+[error] org.apache.http.HttpResponse
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:8:1: package org.apache.http does not exist
+[error] org.apache.http.StatusLine
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:9:1: package org.apache.http.client.methods does not exist
+[error] org.apache.http.client.methods.HttpGet
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:10:1: package org.apache.http.client.utils does not exist
+[error] org.apache.http.client.utils.URIBuilder
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:11:1: package org.apache.http.impl.client does not exist
+[error] org.apache.http.impl.client.CloseableHttpClient
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:12:1: package org.apache.http.impl.client does not exist
+[error] org.apache.http.impl.client.HttpClients
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:13:1: package org.apache.http.util does not exist
+[error] org.apache.http.util.EntityUtils
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:18:1: package org.json does not exist
+[error] org.json.JSONArray
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:19:1: package org.json does not exist
+[error] org.json.JSONException
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:20:1: package org.json does not exist
+[error] org.json.JSONObject
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:26:1: cannot find symbol
+[error]   symbol:   class List
+[error]   location: class controllers.FreelancerController
+[error] List
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:26:1: cannot find symbol
+[error]   symbol:   class ArrayList
+[error]   location: class controllers.FreelancerController
+[error] ArrayList
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:29:1: cannot find symbol
+[error]   symbol:   class JSONArray
+[error]   location: class controllers.FreelancerController
+[error] JSONArray
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:32:1: cannot find symbol
+[error]   symbol:   class URIBuilder
+[error]   location: class controllers.FreelancerController
+[error] URIBuilder
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:32:1: cannot find symbol
+[error]   symbol:   class URIBuilder
+[error]   location: class controllers.FreelancerController
+[error] URIBuilder
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:34:1: cannot find symbol
+[error]   symbol:   class CloseableHttpClient
+[error]   location: class controllers.FreelancerController
+[error] CloseableHttpClient
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:34:1: cannot find symbol
+[error]   symbol:   variable HttpClients
+[error]   location: class controllers.FreelancerController
+[error] HttpClients
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:36:1: cannot find symbol
+[error]   symbol:   class HttpResponse
+[error]   location: class controllers.FreelancerController
+[error] HttpResponse
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:38:1: cannot find symbol
+[error]   symbol:   class HttpGet
+[error]   location: class controllers.FreelancerController
+[error] HttpGet
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:38:1: cannot find symbol
+[error]   symbol:   class HttpGet
+[error]   location: class controllers.FreelancerController
+[error] HttpGet
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:41:1: cannot find symbol
+[error]   symbol:   class StatusLine
+[error]   location: class controllers.FreelancerController
+[error] StatusLine
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:43:1: cannot find symbol
+[error]   symbol:   variable EntityUtils
+[error]   location: class controllers.FreelancerController
+[error] EntityUtils
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:44:1: cannot find symbol
+[error]   symbol:   class JSONObject
+[error]   location: class controllers.FreelancerController
+[error] JSONObject
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:44:1: cannot find symbol
+[error]   symbol:   class JSONObject
+[error]   location: class controllers.FreelancerController
+[error] JSONObject
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:46:1: cannot find symbol
+[error]   symbol:   class JSONArray
+[error]   location: class controllers.FreelancerController
+[error] JSONArray
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:51:1: package JSONObject does not exist
+[error] JSONObject.NULL
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:61:1: cannot find symbol
+[error]   symbol:   method setPreview_description(java.lang.String)
+[error]   location: variable obj of type models.FreelancerProject
+[error] obj.setPreview_description
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:91:1: method render in class views.html.index cannot be applied to given types;
+[error]   required: play.twirl.api.Html
+[error]   found: no arguments
+[error]   reason: actual and formal argument lists differ in length
+[error] views.html.index.render
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[error] Total time: 2 s, completed 12 Mar, 2022 5:51:54 PM
+[debug] > Exec(idea-shell, None, None)

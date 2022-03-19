@@ -1,0 +1,21 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 2 Scala sources and 5 Java sources to C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes ...
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerClient.java:20:1: cannot find symbol
+[error]   symbol:   class Strint
+[error]   location: class controllers.FreelancerClient
+[error] Strint
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:11:1: package services does not exist
+[error] services.FreelancerServices
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:15:1: cannot find symbol
+[error]   symbol:   class FreelancerServices
+[error]   location: class controllers.FreelancerController
+[error] FreelancerServices
+[error] C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app\controllers\FreelancerController.java:19:1: cannot find symbol
+[error]   symbol:   class FreelancerServices
+[error]   location: class controllers.FreelancerController
+[error] FreelancerServices
+[error] (Compile / compileIncremental) javac returned non-zero exit code
+[error] Total time: 1 s, completed 12 Mar, 2022 2:09:40 PM
+[debug] > Exec(idea-shell, None, None)
