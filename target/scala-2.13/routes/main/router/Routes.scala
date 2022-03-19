@@ -14,24 +14,24 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  FreelancerController_0: controllers.FreelancerController,
+  FreelancerController_1: controllers.FreelancerController,
   // @LINE:14
-  Assets_1: controllers.Assets,
+  Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    FreelancerController_0: controllers.FreelancerController,
+    FreelancerController_1: controllers.FreelancerController,
     // @LINE:14
-    Assets_1: controllers.Assets
-  ) = this(errorHandler, FreelancerController_0, Assets_1, "/")
+    Assets_0: controllers.Assets
+  ) = this(errorHandler, FreelancerController_1, Assets_0, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, FreelancerController_0, Assets_1, prefix)
+    new Routes(errorHandler, FreelancerController_1, Assets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -39,12 +39,12 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.FreelancerController.index()"""),
+    ("""GET""", this.prefix, """controllers.FreelancerController.index(request:play.mvc.Http.Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """search""", """controllers.FreelancerController.search(inputKeyword:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """profile/""" + "$" + """ownerID<[^/]+>""", """controllers.FreelancerController.profile(ownerID:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """globalStats""", """controllers.FreelancerController.globalStats()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """localStats/""" + "$" + """projectID<[^/]+>""", """controllers.FreelancerController.localStats(projectID:String)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """skills/""" + "$" + """skillName<[^/]+>""", """controllers.FreelancerController.skills(skillName:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """skills/""" + "$" + """skillId<[^/]+>""", """controllers.FreelancerController.skills(skillId:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -58,12 +58,14 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_FreelancerController_index0_invoker = createInvoker(
-    FreelancerController_0.index(),
+    
+    (req:play.mvc.Http.Request) =>
+      FreelancerController_1.index(fakeValue[play.mvc.Http.Request]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
       "index",
-      Nil,
+      Seq(classOf[play.mvc.Http.Request]),
       "GET",
       this.prefix + """""",
       """ An example controller showing a sample home page""",
@@ -76,7 +78,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("search")))
   )
   private[this] lazy val controllers_FreelancerController_search1_invoker = createInvoker(
-    FreelancerController_0.search(fakeValue[String]),
+    FreelancerController_1.search(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
@@ -94,7 +96,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("profile/"), DynamicPart("ownerID", """[^/]+""",true)))
   )
   private[this] lazy val controllers_FreelancerController_profile2_invoker = createInvoker(
-    FreelancerController_0.profile(fakeValue[String]),
+    FreelancerController_1.profile(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
@@ -112,7 +114,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("globalStats")))
   )
   private[this] lazy val controllers_FreelancerController_globalStats3_invoker = createInvoker(
-    FreelancerController_0.globalStats(),
+    FreelancerController_1.globalStats(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
@@ -130,7 +132,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("localStats/"), DynamicPart("projectID", """[^/]+""",true)))
   )
   private[this] lazy val controllers_FreelancerController_localStats4_invoker = createInvoker(
-    FreelancerController_0.localStats(fakeValue[String]),
+    FreelancerController_1.localStats(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
@@ -145,17 +147,17 @@ class Routes(
 
   // @LINE:11
   private[this] lazy val controllers_FreelancerController_skills5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("skills/"), DynamicPart("skillName", """[^/]+""",true)))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("skills/"), DynamicPart("skillId", """[^/]+""",true)))
   )
   private[this] lazy val controllers_FreelancerController_skills5_invoker = createInvoker(
-    FreelancerController_0.skills(fakeValue[String]),
+    FreelancerController_1.skills(fakeValue[Integer]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.FreelancerController",
       "skills",
-      Seq(classOf[String]),
+      Seq(classOf[Integer]),
       "GET",
-      this.prefix + """skills/""" + "$" + """skillName<[^/]+>""",
+      this.prefix + """skills/""" + "$" + """skillId<[^/]+>""",
       """""",
       Seq()
     )
@@ -166,7 +168,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_versioned6_invoker = createInvoker(
-    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
+    Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -185,43 +187,44 @@ class Routes(
     // @LINE:6
     case controllers_FreelancerController_index0_route(params@_) =>
       call { 
-        controllers_FreelancerController_index0_invoker.call(FreelancerController_0.index())
+        controllers_FreelancerController_index0_invoker.call(
+          req => FreelancerController_1.index(req))
       }
   
     // @LINE:7
     case controllers_FreelancerController_search1_route(params@_) =>
       call(params.fromQuery[String]("inputKeyword", None)) { (inputKeyword) =>
-        controllers_FreelancerController_search1_invoker.call(FreelancerController_0.search(inputKeyword))
+        controllers_FreelancerController_search1_invoker.call(FreelancerController_1.search(inputKeyword))
       }
   
     // @LINE:8
     case controllers_FreelancerController_profile2_route(params@_) =>
       call(params.fromPath[String]("ownerID", None)) { (ownerID) =>
-        controllers_FreelancerController_profile2_invoker.call(FreelancerController_0.profile(ownerID))
+        controllers_FreelancerController_profile2_invoker.call(FreelancerController_1.profile(ownerID))
       }
   
     // @LINE:9
     case controllers_FreelancerController_globalStats3_route(params@_) =>
       call { 
-        controllers_FreelancerController_globalStats3_invoker.call(FreelancerController_0.globalStats())
+        controllers_FreelancerController_globalStats3_invoker.call(FreelancerController_1.globalStats())
       }
   
     // @LINE:10
     case controllers_FreelancerController_localStats4_route(params@_) =>
       call(params.fromPath[String]("projectID", None)) { (projectID) =>
-        controllers_FreelancerController_localStats4_invoker.call(FreelancerController_0.localStats(projectID))
+        controllers_FreelancerController_localStats4_invoker.call(FreelancerController_1.localStats(projectID))
       }
   
     // @LINE:11
     case controllers_FreelancerController_skills5_route(params@_) =>
-      call(params.fromPath[String]("skillName", None)) { (skillName) =>
-        controllers_FreelancerController_skills5_invoker.call(FreelancerController_0.skills(skillName))
+      call(params.fromPath[Integer]("skillId", None)) { (skillId) =>
+        controllers_FreelancerController_skills5_invoker.call(FreelancerController_1.skills(skillId))
       }
   
     // @LINE:14
     case controllers_Assets_versioned6_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned6_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned6_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

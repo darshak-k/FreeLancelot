@@ -24,6 +24,8 @@ import play.mvc.Controller;
 import play.mvc.Result;
 
 import play.libs.ws.WSClient;
+import play.mvc.Http;
+import java.util.UUID;
 
 import models.FreelancerProject;
 import views.html.*;
@@ -46,12 +48,67 @@ public class FreelancerController extends Controller {
 	private String baseURL = "https://www.freelancer.com/api";
 	private List<FreelancerProject> projects = new ArrayList<FreelancerProject>();
 	private List<SearchResult> searchResults = new ArrayList<SearchResult>();
+	private List<SearchResult> skillSearchResults = new ArrayList<SearchResult>();
 	private static final int RESULT_COUNT = 10;
 
 	@Inject
 	public FreelancerController(WSClient ws, SyncCacheApi cache) {
 		this.ws = ws;
 		this.cache = cache;
+	}
+
+	/**
+	 * Freelancer API call to fetch data from the API and render into the html page.
+	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
+	 * convert the data into data model of application.
+	 * 
+	 * @author  Mansi Lakhani
+	 * @param skillId fetch result for given skill id
+	 */
+	public CompletionStage<Result> fetchProjectsFromSkills(Integer skillId) {
+		Optional<List<SearchResult>> cachedSkillsResults = cache.get("cachedSkillsResult");
+		if (cachedSkillsResults.isPresent()) {
+			searchResults = cachedSkillsResults.get();
+			Optional<SearchResult> previousSearchOption = ProcessProjects.getProjectByQuery(searchResults,
+					String.valueOf(skillId));
+			if (previousSearchOption.isPresent()) {
+				SearchResult previousSearch = previousSearchOption.get();
+				searchResults = ProcessProjects.removeProjectResult(searchResults, String.valueOf(skillId));
+				searchResults.add(0, previousSearch);
+				return CompletableFuture.completedFuture(ok(index.render(searchResults)));
+			}
+
+		}
+
+		return ws.url(baseURL + "/projects/0.1/projects/active")
+				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+				.addQueryParameter("jobs[]", String.valueOf(skillId))
+				.addQueryParameter("job_details", "true")
+				.addQueryParameter("query", String.valueOf(skillId))
+				.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
+				.get()
+				.thenApplyAsync(WSResponse::asJson)
+				.toCompletableFuture()
+				.thenApplyAsync(result -> {
+					System.out.println("Data..." + result);
+					ObjectMapper mapper = new ObjectMapper();
+					mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+
+					try {
+						APIResponse project = mapper.treeToValue(result, APIResponse.class);
+						SearchResult searchResult = new SearchResult();
+						searchResult.setQuery(String.valueOf(skillId));
+						searchResult.setProjects(project.getResult().getProjects());
+
+						skillSearchResults.add(0, searchResult);
+						cache.set("cachedSkillsResult", skillSearchResults, 15 * 60);
+					} catch (JsonProcessingException e) {
+						e.printStackTrace();
+					}
+
+					return ok(index.render(skillSearchResults)).withNewSession();
+
+				});
 	}
 
 	/**
@@ -86,8 +143,17 @@ public class FreelancerController extends Controller {
 		return ok(stats.render("local", map));
 	}
 
-	public Result skills(String skillName) {
-		return ok(search.render("ownerID"));
+
+	/**
+	 * Freelancer API call to fetch data from the API and render into the html page.
+	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
+	 * convert the data into data model of application.
+	 * 
+	 * @author Mansi Lakhani
+	 * @param skillId fetch result for given skill id
+	 */
+	public CompletionStage<Result> skills(Integer skillId) {
+		return fetchProjectsFromSkills(skillId);
 	}
 
 	/**
@@ -103,8 +169,9 @@ public class FreelancerController extends Controller {
 		Optional<List<SearchResult>> cachedSearchResults = cache.get("cachedSearchResults");
 		if (cachedSearchResults.isPresent()) {
 			searchResults = cachedSearchResults.get();
-			Optional<SearchResult> previousSearchOption = ProcessProjects.getProjectByQuery(searchResults, inputKeyword);
-			if(previousSearchOption.isPresent()){
+			Optional<SearchResult> previousSearchOption = ProcessProjects.getProjectByQuery(searchResults,
+					inputKeyword);
+			if (previousSearchOption.isPresent()) {
 				SearchResult previousSearch = previousSearchOption.get();
 				searchResults = ProcessProjects.removeProjectResult(searchResults, inputKeyword);
 				searchResults.add(0, previousSearch);
@@ -112,8 +179,6 @@ public class FreelancerController extends Controller {
 			}
 
 		}
-
-
 
 		return ws.url(baseURL + "/projects/0.1/projects/active")
 				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
@@ -132,7 +197,7 @@ public class FreelancerController extends Controller {
 
 						searchResults.add(0, searchResult);
 
-						cache.set("cachedSearchResults", searchResults, 15*60);
+						cache.set("cachedSearchResults", searchResults, 15 * 60);
 					} catch (JsonProcessingException e) {
 						e.printStackTrace();
 					}
@@ -163,20 +228,14 @@ public class FreelancerController extends Controller {
 	 * the application receives a <code>GET</code> request with a path of
 	 * <code>/</code>.
 	 */
-	public CompletionStage<Result> index() {
+	public CompletionStage<Result> index(Http.Request request) {
 		searchResults.clear();
-		return CompletableFuture.completedFuture(ok(index.render(searchResults)));
+		String sessionId = request.session().get("SESSION_ID").orElseGet(() -> UUID.randomUUID().toString());
+		return CompletableFuture.completedFuture(ok(index.render(searchResults)).addingToSession(request, "SESSION_ID", sessionId));
 	}
 
 	public Result profile(String ownerID) {
 		return ok(search.render(ownerID));
 	}
 
-
-//	private Optional<RequestToken> getSessionTokenPair() {
-//		if (Http..containsKey("token")) {
-//			return Optional.of(new RequestToken(session("token"), session("secret")));
-//		}
-//		return Optional.empty();
-//	}
 }

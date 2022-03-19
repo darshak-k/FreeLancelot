@@ -1,2 +1,4 @@
-[debug] Acquiring lock on file C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock ...
-[debug] Releasing lock on file C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock.
+[0m[[0m[31merror[0m] [0m[0m/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/app/controllers/FreelancerController.java:232:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable UUID[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.FreelancerController[0m
+[0m[[0m[31merror[0m] [0m[0mUUID[0m

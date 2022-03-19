@@ -1,4 +1,4 @@
-[debug] Copy resource mappings: 
-[debug] 	(C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\application.conf,C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes\application.conf)
-[debug] 	(C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\logback.xml,C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes\logback.xml)
-[debug] 	(C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\conf\routes,C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\target\scala-2.13\classes\routes)
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/conf/application.conf,/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/conf/routes,/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/conf/logback.xml,/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/target/scala-2.13/classes/logback.xml)[0m

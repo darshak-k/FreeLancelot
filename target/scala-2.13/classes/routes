@@ -3,12 +3,12 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.FreelancerController.index()
+GET     /                           controllers.FreelancerController.index(request: play.mvc.Http.Request)
 GET     /search                     controllers.FreelancerController.search(inputKeyword: String)
 GET     /profile/:ownerID           controllers.FreelancerController.profile(ownerID: String)
 GET     /globalStats                controllers.FreelancerController.globalStats()
 GET     /localStats/:projectID                controllers.FreelancerController.localStats(projectID: String)
-GET     /skills/:skillName          controllers.FreelancerController.skills(skillName: String)
+GET     /skills/:skillId          controllers.FreelancerController.skills(skillId: Integer)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

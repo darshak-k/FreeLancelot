@@ -71,7 +71,7 @@
 									<td>@project.getType()</td>
 									<td>
 										@for(skill <- project.getJobs()){
-											<a href="/skills/@skill" target="_blank"> @skill.getName()</a>
+											<a href="/skills/@{skill.getId()}" target="_blank"> @skill.getName()</a>
 										}
 									</td>
 
