@@ -1,4 +1,4 @@
-# Play Hello World Web Tutorial for Java
+# SOEN 6441 - FreeLancelot
 
 To follow the steps in this tutorial, you will need the correct version of Java and a build tool. You can build Play projects with any Java build tool. Since sbt takes advantage of Play features such as auto-reload, the tutorial describes how to build the project with sbt. 
 
@@ -33,4 +33,4 @@ To build and run the project:
 3. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:9000>
 
 The Play application responds: `Welcome to the Hello World Tutorial!`
-# SOEN6441-FreeLancelot-DAMN
+
