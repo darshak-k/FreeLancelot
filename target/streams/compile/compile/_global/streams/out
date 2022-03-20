@@ -1,8 +1,12 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\GOHIL\Documents\APP_Project\SOEN6441-FreeLancelot-DAMN\app\controllers\FreelancerController.java:308:1:  error: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m		.addQueryParameter("limit", String.valueOf(resultCount))[0m
-[0m[[0m[31merror[0m] [0m[0m		                                           ^  symbol:   variable resultCount[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class FreelancerController[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\GOHIL\Documents\APP_Project\SOEN6441-FreeLancelot-DAMN\app\controllers\FreelancerController.java:311:1:  error: invalid method reference[0m
-[0m[[0m[31merror[0m] [0m[0m		.thenApplyAsync(WSResponse::asJson)[0m
-[0m[[0m[31merror[0m] [0m[0m		                ^  non-static method asJson() cannot be referenced from a static context[0m
-[0m[[0m[31merror[0m] [0m[0m2 errors[0m
+[0m[[0m[31merror[0m] [0m[0m/home/mansi/Concordia/APP/assignment 1/temp/SOEN6441-FreeLancelot-DAMN/app/controllers/FreelancerController.java:89:1: no suitable method found for addQueryParameter(java.lang.String,java.lang.Integer)[0m
+[0m[[0m[31merror[0m] [0m[0m    method play.libs.ws.StandaloneWSRequest.addQueryParameter(java.lang.String,java.lang.String) is not applicable[0m
+[0m[[0m[31merror[0m] [0m[0m      (argument mismatch; java.lang.Integer cannot be converted to java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0m    method play.libs.ws.WSRequest.addQueryParameter(java.lang.String,java.lang.String) is not applicable[0m
+[0m[[0m[31merror[0m] [0m[0m      (argument mismatch; java.lang.Integer cannot be converted to java.lang.String)[0m
+[0m[[0m[31merror[0m] [0m[0mws.url(baseURL + "/projects/0.1/projects/active/")[0m
+[0m[[0m[31merror[0m] [0m[0m				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")[0m
+[0m[[0m[31merror[0m] [0m[0m				.addQueryParameter("limit", "10")[0m
+[0m[[0m[31merror[0m] [0m[0m				.addQueryParameter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/mansi/Concordia/APP/assignment 1/temp/SOEN6441-FreeLancelot-DAMN/app/controllers/FreelancerController.java:93:1: invalid method reference[0m
+[0m[[0m[31merror[0m] [0m[0m  non-static method asJson() cannot be referenced from a static context[0m
+[0m[[0m[31merror[0m] [0m[0mWSResponse[0m

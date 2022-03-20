@@ -65,7 +65,7 @@ public class FreelancerController extends Controller {
 	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
 	 * convert the data into data model of application.
 	 * 
-	 * @author  Mansi Lakhani
+	 * @author Mansi Lakhani
 	 * @param skillId fetch result for given skill id
 	 */
 	public CompletionStage<Result> fetchProjectsFromSkills(Integer skillId) {
@@ -83,12 +83,12 @@ public class FreelancerController extends Controller {
 
 		}
 
-		return ws.url(baseURL + "/projects/0.1/projects/active")
+		return ws.url(baseURL + "/projects/0.1/projects/active/")
 				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+				.addQueryParameter("limit", "10")
 				.addQueryParameter("jobs[]", String.valueOf(skillId))
 				.addQueryParameter("job_details", "true")
-				.addQueryParameter("query", String.valueOf(skillId))
-				.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
+				.addQueryParameter("compact", "true")
 				.get()
 				.thenApplyAsync(WSResponse::asJson)
 				.toCompletableFuture()
@@ -145,7 +145,6 @@ public class FreelancerController extends Controller {
 		LinkedHashMap<String, Long> map = ProcessProjects.getLocalStatByProjectId(searchResults, projectID);
 		return ok(stats.render("local", map));
 	}
-
 
 	/**
 	 * Freelancer API call to fetch data from the API and render into the html page.
@@ -235,7 +234,8 @@ public class FreelancerController extends Controller {
 	public CompletionStage<Result> index(Http.Request request) {
 		searchResults.clear();
 		String sessionId = request.session().get("SESSION_ID").orElseGet(() -> UUID.randomUUID().toString());
-		return CompletableFuture.completedFuture(ok(index.render(searchResults)).addingToSession(request, "SESSION_ID", sessionId));
+		return CompletableFuture
+				.completedFuture(ok(index.render(searchResults)).addingToSession(request, "SESSION_ID", sessionId));
 	}
 
 	/**
@@ -271,7 +271,7 @@ public class FreelancerController extends Controller {
 						e.printStackTrace();
 					}
 					return ok(profile.render(ProfileProjectsResults, ProfileResults));
-					
+
 				}).toCompletableFuture();
 	}
 
@@ -288,7 +288,6 @@ public class FreelancerController extends Controller {
 
 	}
 
-
 	/**
 	 * Freelancer API call to fetch data from the API and render into the html page.
 	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
@@ -301,34 +300,34 @@ public class FreelancerController extends Controller {
 		ProfileProjectsResults.clear();
 		ProfileResults.clear();
 
-		return 	ws.url(baseURL + "/users/0.1/users/" + String.valueOf(ownerID))
-		.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
-		.addQueryParameter("chosenrole", "true")
-		.addQueryParameter("limitedaccount", "true")
-		.addQueryParameter("query", String.valueOf(ownerID))
-		.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
-		.addQueryParameter("compact", "true")
-		.get()
-		.thenApplyAsync(WSResponse::asJson)
-		.toCompletableFuture()
-		.thenApplyAsync(result1 -> {
-			System.out.println("res..." + result1);
-			ObjectMapper mapper = new ObjectMapper();
-			mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+		return ws.url(baseURL + "/users/0.1/users/" + String.valueOf(ownerID))
+				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+				.addQueryParameter("chosenrole", "true")
+				.addQueryParameter("limitedaccount", "true")
+				.addQueryParameter("query", String.valueOf(ownerID))
+				.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
+				.addQueryParameter("compact", "true")
+				.get()
+				.thenApplyAsync(WSResponse::asJson)
+				.toCompletableFuture()
+				.thenApplyAsync(result1 -> {
+					System.out.println("res..." + result1);
+					ObjectMapper mapper = new ObjectMapper();
+					mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
-			try {
-				ProfileResponce profile = mapper.treeToValue(result1, ProfileResponce.class);
-				SearchProfile searchProfile = new SearchProfile();
-				searchProfile.setQuery(String.valueOf(ownerID));
-				searchProfile.setProfiledata(profile.getResult());
+					try {
+						ProfileResponce profile = mapper.treeToValue(result1, ProfileResponce.class);
+						SearchProfile searchProfile = new SearchProfile();
+						searchProfile.setQuery(String.valueOf(ownerID));
+						searchProfile.setProfiledata(profile.getResult());
 
-				ProfileResults.add(0,searchProfile);
-			} catch (JsonProcessingException e) {
-				e.printStackTrace();
-			}				
-			
-			return redirect("/profile/"+ownerID);
-		}, httpExecutionContext.current()).toCompletableFuture();
+						ProfileResults.add(0, searchProfile);
+					} catch (JsonProcessingException e) {
+						e.printStackTrace();
+					}
+
+					return redirect("/profile/" + ownerID);
+				}, httpExecutionContext.current()).toCompletableFuture();
 
 	}
 

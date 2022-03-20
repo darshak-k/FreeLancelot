@@ -1,18 +1,13 @@
-2022-03-20 10:35:19,124 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-03-20 11:46:36,598 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-03-20 10:35:19,223 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev) (no global state)
-2022-03-20 10:37:10,630 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-03-20 10:37:10,648 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev) (no global state)
-2022-03-20 10:41:55,540 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-12-thread-7 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
-2022-03-20 10:41:55,541 [INFO] from play.core.server.AkkaHttpServer in pool-12-thread-7 - Stopping Akka HTTP server...
-2022-03-20 10:41:55,544 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-36 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
-2022-03-20 10:41:55,688 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-38 - Running provided shutdown stop hooks
+2022-03-20 11:46:36,632 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2022-03-20 11:46:36,880 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-03-20 11:46:36,881 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-03-20 11:48:47,498 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-12-thread-4 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2022-03-20 11:48:47,502 [INFO] from play.core.server.AkkaHttpServer in pool-12-thread-4 - Stopping Akka HTTP server...
+2022-03-20 11:48:47,510 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-40 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2022-03-20 11:48:47,581 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-13 - Running provided shutdown stop hooks
