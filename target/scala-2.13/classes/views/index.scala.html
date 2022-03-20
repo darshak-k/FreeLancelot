@@ -41,7 +41,7 @@
 			@{
 				if(searchResultData.size() > 0){
 						<center>
-							<a href="/globalStats" target="_blank"> Global Stats </a>
+							<a href="/globalStats" > Global Stats </a>
 						</center>
 						<br/>
 						<br/>
@@ -65,17 +65,17 @@
 						<tbody>
 							@for(project <- searchResult.getProjects()) {
 								<tr>
-									<td><a href="/profile/@{project.getOwner_id()}" target="_blank"> @project.getOwner_id()</a></td>
+									<td><a href="/profiledata/@{project.getOwner_id()}" > @project.getOwner_id()</a></td>
 									<td>@project.getDate_string()</td>
 									<td>@project.getTitle()</td>
 									<td>@project.getType()</td>
 									<td>
 										@for(skill <- project.getJobs()){
-											<a href="/skills/@skill" target="_blank"> @skill.getName()</a>
+											<a href="/skills/@{skill.getId()}" > @skill.getName()</a>
 										}
 									</td>
 
-									<td><a href="/localStats/@{project.getId()}" target="_blank"> stats </a></td>
+									<td><a href="/localStats/@{project.getId()}" > stats </a></td>
 								</tr>
 
 							}
