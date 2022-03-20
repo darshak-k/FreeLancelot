@@ -10,7 +10,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:14
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:15
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -38,16 +38,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
-    def profile: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FreelancerController.profile",
-      """
-        function(ownerID0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("ownerID", ownerID0))})
-        }
-      """
-    )
-  
     // @LINE:7
     def search: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FreelancerController.search",
@@ -58,7 +48,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:12
     def skills: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FreelancerController.skills",
       """
@@ -68,7 +58,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:10
     def globalStats: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FreelancerController.globalStats",
       """
@@ -78,12 +68,32 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:11
     def localStats: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FreelancerController.localStats",
       """
         function(projectID0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "localStats/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("projectID", projectID0))})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def profile: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FreelancerController.profile",
+      """
+        function(ownerID0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("ownerID", ownerID0))})
+        }
+      """
+    )
+  
+    // @LINE:9
+    def profileData: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FreelancerController.profileData",
+      """
+        function(ownerID0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profiledata/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("ownerID", ownerID0))})
         }
       """
     )

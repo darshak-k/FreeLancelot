@@ -29,7 +29,8 @@ object search extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
       {
 
 
-Seq[Any](format.raw/*2.1*/("""
+Seq[Any](format.raw/*1.19*/("""
+
 """),format.raw/*3.1*/("""<html lang="en">
 
     <head>
@@ -57,9 +58,9 @@ Seq[Any](format.raw/*2.1*/("""
               /*
                   -- GENERATED --
                   SOURCE: app/views/search.scala.html
-                  HASH: 5a95af195152ef4785a2cb68103ad9a00132a308
-                  MATRIX: 908->1|1019->19|1046->20|1176->123|1204->130
-                  LINES: 27->1|32->2|33->3|40->10|40->10
+                  HASH: ecd99d636a444f61778a47aa00243122d7165aad
+                  MATRIX: 908->1|1020->18|1050->22|1187->132|1215->139
+                  LINES: 27->1|32->1|34->3|41->10|41->10
                   -- GENERATED --
               */
           

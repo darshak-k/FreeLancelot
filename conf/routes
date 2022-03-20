@@ -5,7 +5,8 @@
 # An example controller showing a sample home page
 GET     /                           controllers.FreelancerController.index(request: play.mvc.Http.Request)
 GET     /search                     controllers.FreelancerController.search(inputKeyword: String)
-GET     /profile/:ownerID           controllers.FreelancerController.profile(ownerID: String)
+GET     /profile/:ownerID           controllers.FreelancerController.profile(ownerID: Integer)
+GET     /profiledata/:ownerID           controllers.FreelancerController.profileData(ownerID: Integer)
 GET     /globalStats                controllers.FreelancerController.globalStats()
 GET     /localStats/:projectID                controllers.FreelancerController.localStats(projectID: String)
 GET     /skills/:skillId          controllers.FreelancerController.skills(skillId: Integer)

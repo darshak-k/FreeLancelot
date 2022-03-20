@@ -1,4 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0m/home/mansi/Concordia/APP/assignment 1/SOEN6441-FreeLancelot-DAMN/app/controllers/FreelancerController.java:232:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   variable UUID[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class controllers.FreelancerController[0m
-[0m[[0m[31merror[0m] [0m[0mUUID[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\GOHIL\Documents\APP_Project\SOEN6441-FreeLancelot-DAMN\app\controllers\FreelancerController.java:308:1:  error: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m		.addQueryParameter("limit", String.valueOf(resultCount))[0m
+[0m[[0m[31merror[0m] [0m[0m		                                           ^  symbol:   variable resultCount[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class FreelancerController[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\GOHIL\Documents\APP_Project\SOEN6441-FreeLancelot-DAMN\app\controllers\FreelancerController.java:311:1:  error: invalid method reference[0m
+[0m[[0m[31merror[0m] [0m[0m		.thenApplyAsync(WSResponse::asJson)[0m
+[0m[[0m[31merror[0m] [0m[0m		                ^  non-static method asJson() cannot be referenced from a static context[0m
+[0m[[0m[31merror[0m] [0m[0m2 errors[0m

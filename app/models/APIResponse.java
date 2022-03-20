@@ -3,7 +3,7 @@ package models;
 /**
  * Response of API Call
  * 
- * @author Darshak Kachchhi, Mansi Lakhani and Apeksha Gohil
+ * @author Darshak Kachchhi, Mansi Lakhani and Apekshaba Gohil
  * @created 14/03/2022
  */
 public class APIResponse {

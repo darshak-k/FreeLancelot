@@ -11,14 +11,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import models.APIResponse;
-import models.ProcessProjects;
-import models.SearchResult;
+import models.*;
 
 import play.cache.NamedCache;
 import play.cache.SyncCacheApi;
 
 import play.libs.ws.WSResponse;
+import play.libs.concurrent.HttpExecutionContext;
 
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -35,12 +34,13 @@ import javax.inject.Inject;
 /**
  * Freelancer controller class
  * 
- * @author Darshak Kachchhi, Mansi Lakhani and Apeksha Gohil
+ * @author Darshak Kachchhi, Mansi Lakhani and Apekshaba Gohil
  *
  */
 public class FreelancerController extends Controller {
 
 	private WSClient ws;
+	private HttpExecutionContext httpExecutionContext;
 
 	@NamedCache("session-cache")
 	private SyncCacheApi cache;
@@ -49,12 +49,15 @@ public class FreelancerController extends Controller {
 	private List<FreelancerProject> projects = new ArrayList<FreelancerProject>();
 	private List<SearchResult> searchResults = new ArrayList<SearchResult>();
 	private List<SearchResult> skillSearchResults = new ArrayList<SearchResult>();
+	private List<SearchResult> ProfileProjectsResults = new ArrayList<SearchResult>();
+	private List<SearchProfile> ProfileResults = new ArrayList<SearchProfile>();
 	private static final int RESULT_COUNT = 10;
 
 	@Inject
-	public FreelancerController(WSClient ws, SyncCacheApi cache) {
+	public FreelancerController(WSClient ws, SyncCacheApi cache, HttpExecutionContext ec) {
 		this.ws = ws;
 		this.cache = cache;
+		this.httpExecutionContext = ec;
 	}
 
 	/**
@@ -227,6 +230,7 @@ public class FreelancerController extends Controller {
 	 * in the <code>routes</code> file means that this method will be called when
 	 * the application receives a <code>GET</code> request with a path of
 	 * <code>/</code>.
+	 * * @author Mansi Lakhani
 	 */
 	public CompletionStage<Result> index(Http.Request request) {
 		searchResults.clear();
@@ -234,8 +238,98 @@ public class FreelancerController extends Controller {
 		return CompletableFuture.completedFuture(ok(index.render(searchResults)).addingToSession(request, "SESSION_ID", sessionId));
 	}
 
-	public Result profile(String ownerID) {
-		return ok(search.render(ownerID));
+	/**
+	 * Freelancer API call to fetch data from the API and render into the html page.
+	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
+	 * convert the data into data model of application.
+	 * 
+	 * @author Apekshaba Gohil
+	 * @param ownerID fetch result for given owner id
+	 */
+	public CompletionStage<Result> fetchOwnerProject(Integer ownerID) {
+
+		return ws.url(baseURL + "/projects/0.1/projects?owners[]=" + String.valueOf(ownerID))
+				.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+				.addQueryParameter("job_details", "true")
+				.addQueryParameter("query", String.valueOf(ownerID))
+				.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
+				.get()
+				.thenApplyAsync(WSResponse::asJson)
+				.toCompletableFuture()
+				.thenApplyAsync(result -> {
+					ObjectMapper mapper = new ObjectMapper();
+					mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+
+					try {
+						APIResponse project = mapper.treeToValue(result, APIResponse.class);
+						SearchResult searchResult = new SearchResult();
+						searchResult.setQuery(String.valueOf(ownerID));
+						searchResult.setProjects(project.getResult().getProjects());
+
+						ProfileProjectsResults.add(0, searchResult);
+					} catch (JsonProcessingException e) {
+						e.printStackTrace();
+					}
+					return ok(profile.render(ProfileProjectsResults, ProfileResults));
+					
+				}).toCompletableFuture();
+	}
+
+	/**
+	 * Freelancer API call to fetch data from the API and render into the html page.
+	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
+	 * convert the data into data model of application.
+	 * 
+	 * @author Apekshaba Gohil
+	 * @param ownerID fetch result for given owner id
+	 */
+	public CompletionStage<Result> profile(Integer ownerID) {
+		return fetchOwnerProject(ownerID);
+
+	}
+
+
+	/**
+	 * Freelancer API call to fetch data from the API and render into the html page.
+	 * API data will be fetch as a JSON Data and then using the ObjectMapper,
+	 * convert the data into data model of application.
+	 * 
+	 * @author Apekshaba Gohil
+	 * @param ownerID fetch result for given owner id
+	 */
+	public CompletionStage<Result> profileData(Integer ownerID) {
+		ProfileProjectsResults.clear();
+		ProfileResults.clear();
+
+		return 	ws.url(baseURL + "/users/0.1/users/" + String.valueOf(ownerID))
+		.addHeader("freelancer-oauth-v1", "l12Bz0qvwEkZVSvwzFds2EBSGGhDqa")
+		.addQueryParameter("chosenrole", "true")
+		.addQueryParameter("limitedaccount", "true")
+		.addQueryParameter("query", String.valueOf(ownerID))
+		.addQueryParameter("limit", String.valueOf(RESULT_COUNT))
+		.addQueryParameter("compact", "true")
+		.get()
+		.thenApplyAsync(WSResponse::asJson)
+		.toCompletableFuture()
+		.thenApplyAsync(result1 -> {
+			System.out.println("res..." + result1);
+			ObjectMapper mapper = new ObjectMapper();
+			mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+
+			try {
+				ProfileResponce profile = mapper.treeToValue(result1, ProfileResponce.class);
+				SearchProfile searchProfile = new SearchProfile();
+				searchProfile.setQuery(String.valueOf(ownerID));
+				searchProfile.setProfiledata(profile.getResult());
+
+				ProfileResults.add(0,searchProfile);
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}				
+			
+			return redirect("/profile/"+ownerID);
+		}, httpExecutionContext.current()).toCompletableFuture();
+
 	}
 
 }
