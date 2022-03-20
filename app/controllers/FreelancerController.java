@@ -342,5 +342,4 @@ public class FreelancerController extends Controller {
 				}).toCompletableFuture();
 
 	}
-
 }

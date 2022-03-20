@@ -1,4 +1,4 @@
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/C:/Users/mauli/Desktop/FREELOT/project/"), "freelot-build")...
-[debug] Done updating ProjectRef(uri("file:/C:/Users/mauli/Desktop/FREELOT/project/"), "freelot-build")
-[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/C:/Users/mauli/Downloads/Darshak%20Download/SOEN6441-FreeLancelot-DAMN-dev/SOEN6441-FreeLancelot-DAMN-dev/project/"), "soen6441-freelancelot-damn-dev-build")...
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug] Done updating ProjectRef(uri("file:/C:/Users/mauli/Downloads/Darshak%20Download/SOEN6441-FreeLancelot-DAMN-dev/SOEN6441-FreeLancelot-DAMN-dev/project/"), "soen6441-freelancelot-damn-dev-build")
