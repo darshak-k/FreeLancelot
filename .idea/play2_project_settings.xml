@@ -13,7 +13,8 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="confDir" value="C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\FreeLancelot\app" />
+              <option name="sourceDir" value="C:\Users\mauli\Downloads\Darshak Download\SOEN6441-FreeLancelot-DAMN-dev\SOEN6441-FreeLancelot-DAMN-dev\app" />
+              <option name="confDir" value="C:\Users\mauli\Desktop\FREELOT\app" />
               <option name="templateImports">
                 <list>
                   <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
@@ -43,7 +44,7 @@
                   <option value="play.libs.F" />
                 </list>
               </option>
-              <option name="uri" value="/C:/Users/mauli/Desktop/MACS/SOEN%206441%20-%20Advanced%20Programming%20Practices/FreeLancelot" />
+              <option name="uri" value="/C:/Users/mauli/Desktop/FREELOT" />
             </ProjectSettingsEntry>
           </value>
         </entry>

@@ -18,3 +18,6 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "org.json" % "json" % "20210307"
 libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.13"
+libraryDependencies += "org.assertj" % "assertj-core" % "3.6.2" % Test
+libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
+libraryDependencies += "org.mockito" % "mockito-core" % "2.10.0" % "test"

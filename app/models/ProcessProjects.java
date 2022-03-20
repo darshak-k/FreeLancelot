@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
  * Process Project Data
  *
  * @author Darshak kachchhi
- * @created 16/03/22
  */
 public class ProcessProjects {
 	public static final long MAX_PROJECT_GLOBAL_STATS = 250;
@@ -20,6 +19,7 @@ public class ProcessProjects {
 	 * 
 	 * @param descriptionWordList list of all the keyword from the project
 	 *                            description of fetched data from the API.
+	 * @return sorted linked hash map by value then key.
 	 */
 	private static LinkedHashMap<String, Long> sortedStatsOfLinkedHashMap(List<String> descriptionWordList) {
 		LinkedHashMap<String, Long> map = descriptionWordList.stream()
@@ -39,6 +39,7 @@ public class ProcessProjects {
 	 *                  description, submitted date, title, skills, project type
 	 *                  etc.
 	 * @param projectId project id to get project details
+	 * @return get the project from the list of projects by given project ID
 	 */
 	public static Optional<FreelancerProject> getProjectByProjectId(List<FreelancerProject> projects,
 			String projectId) {
@@ -53,10 +54,11 @@ public class ProcessProjects {
 	 * 
 	 * @param projects the list of search of result to find search result
 	 * @param query    query for which we need to find search result
+	 *
+	 * @return  Get the project from the list of search result
 	 */
 	public static Optional<SearchResult> getProjectByQuery(List<SearchResult> projects, String query) {
 		Optional<SearchResult> result = projects.stream().filter(p -> p.getQuery().equals(query)).limit(1).findFirst();
-
 		return result;
 	}
 
@@ -64,6 +66,7 @@ public class ProcessProjects {
 	 * Get global stats of all the search result for the latest 250 projects
 	 * 
 	 * @param searchResultsData list of search result data from the API call
+	 * @return  sorted linked list of global stats of all the searched projects
 	 */
 	public static LinkedHashMap<String, Long> getGlobalStats(List<SearchResult> searchResultsData) {
 		List<FreelancerProject> resultData = searchResultsData.stream()
@@ -84,6 +87,7 @@ public class ProcessProjects {
 	 * @param searchResultsData list list of search result data from the API call
 	 * @param projectId         the project id of the project for which local stats
 	 *                          will be calculated
+	 * @return  sorted linked list of local stats of given project ID
 	 */
 	public static LinkedHashMap<String, Long> getLocalStatByProjectId(List<SearchResult> searchResultsData,
 			String projectId) {
@@ -102,8 +106,9 @@ public class ProcessProjects {
 	/**
 	 * Remove search result from the list of search project for the given query
 	 * 
-	 * @param projects the list of search of result to find search result
+	 * @param searchResults the list of search of result to find search result
 	 * @param query    query for which we need to find search result
+	 * @return  the list of search result after removing given project ID
 	 */
 	public static List<SearchResult> removeProjectResult(List<SearchResult> searchResults, String query) {
 		return searchResults.stream().filter(search -> !search.getQuery().equals(query)).collect(Collectors.toList());

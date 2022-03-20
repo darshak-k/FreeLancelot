@@ -8,7 +8,6 @@ import java.util.Objects;
  * Search result class to store searching query records
  * 
  * @author Darshak Kachchhi
- * @created 15/03/22
  */
 public class SearchResult {
 	protected String query;

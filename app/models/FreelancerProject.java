@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Freelancer Project class to store details of project
  * 
- * @author Darshak Kachchhi, Mansi Lakhani and Apeksha Gohil
+ * @author Darshak Kachchhi, Mansi Lakhani and Apekshaba Gohil
  */
 public class FreelancerProject {
 

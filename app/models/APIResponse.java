@@ -3,8 +3,7 @@ package models;
 /**
  * Response of API Call
  * 
- * @author Darshak Kachchhi, Mansi Lakhani and Apeksha Gohil
- * @created 14/03/2022
+ * @author Darshak Kachchhi, Mansi Lakhani and Apekshaba Gohil
  */
 public class APIResponse {
 	public String status;

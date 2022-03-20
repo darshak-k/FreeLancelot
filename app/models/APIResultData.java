@@ -5,8 +5,7 @@ import java.util.List;
 /**
  * Result data of API call and total number of count list of freelancer project
  * 
- * @author Darshak Kachchhi, Mansi Lakhani and Apeksha Gohil
- * @created 14/03/2022
+ * @author Darshak Kachchhi, Mansi Lakhani and Apekshaba Gohil
  */
 public class APIResultData {
 
