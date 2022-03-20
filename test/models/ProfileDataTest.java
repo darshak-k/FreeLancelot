@@ -1,5 +1,4 @@
-package Models;
-import models.*;
+package models;
 
 /**
  * ProfilData test classes to test ProfileData class
@@ -15,38 +14,87 @@ import org.junit.*;
 
 
 public class ProfileDataTest {
-    
+    ProfileData data = new ProfileData();
+
     @Test
-	public void getDataTest() {
+    public void idTest() {
+        data.setId("24304119");
+        assertEquals("24304119", data.getId());
+    }
 
-        
-
-		ProfileData data = new ProfileData();
-		data.setId("24304119");
+    @Test
+    public void usernameTest() {
         data.setUsername("korjon");
-        data.setDisplayname("korjon");
-        data.setRole("developer");
-        data.setRegistrationdate("Java");
-        data.setChosenrole("developer");
-        data.setLimitedaccount("Java");
-        data.setLocation(new LocationData());
-        data.setStatus(new StatusData());
-        data.setPrimary_currency(new Primary_currencyData());
-
-
-
-
-		assertEquals("24304119", data.getId());
         assertEquals("korjon", data.getUsername());
+
+    }
+
+    @Test
+    public void displaynameTest() {
+        data.setDisplayname("korjon");
         assertEquals("korjon", data.getDisplayname());
+
+    }
+
+    @Test
+    public void roleTest() {
+        data.setRole("developer");
         assertEquals("developer", data.getRole());
+
+    }
+
+    @Test
+    public void registrationdateTest() {
+        data.setRegistrationdate("Java");
         assertEquals("Java", data.getRegistrationdate());
+
+    }
+
+    @Test
+    public void chosenroleTest() {
+        data.setChosenrole("developer");
         assertEquals("developer", data.getChosenrole());
+
+    }
+
+    @Test
+    public void limitedaccountTest() {
+        data.setLimitedaccount("Java");
         assertEquals("Java", data.getLimitedaccount());
-        assertEquals(0, String.valueOf(data.getLocation()));
-        assertEquals(0, String.valueOf(data.getStatus()));
-        assertEquals(0, String.valueOf(data.getPrimary_currency()));
-	}
+
+    }
+
+    @Test
+    public void locationTest() {
+        Country c = new Country();
+        c.setName("India");
+        LocationData l = new LocationData();
+        l.setCountry(c);
+        data.setLocation(l);
+        assertEquals("India", data.getLocation().getCountry().getName());
+
+    }
+
+    @Test
+    public void statusTest() {
+        StatusData s = new StatusData();
+        s.setEmail_varified("true");
+        data.setStatus(s);
+        assertEquals("true", data.getStatus().getEmail_varified());
+
+    }
+
+    @Test
+    public void primary_currencyTest() {
+        Primary_currencyData p = new Primary_currencyData();
+        p.setName("EUR");
+        data.setPrimary_currency(p);
+        assertEquals("EUR", data.getPrimary_currency().getName());
+
+    }
+
+
+
 
 
 }

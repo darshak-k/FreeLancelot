@@ -1,5 +1,4 @@
-package Models;
-import models.*;
+package models;
 
 
 /**
@@ -18,12 +17,15 @@ public class LocationDataTest {
 
     @Test
     public void getCountryTest() {
-		LocationData country = new LocationData();
-        country.setCountry(new Country());
+        ProfileData data = new ProfileData();
+        Country c = new Country();
+        c.setName("India");
+        LocationData l = new LocationData();
+        l.setCountry(c);
+        data.setLocation(l);
+        assertEquals("India", data.getLocation().getCountry().getName());
 
-        assertEquals(0, String.valueOf(country.getCountry()));
-        
-	}
+    }
 
     
 }

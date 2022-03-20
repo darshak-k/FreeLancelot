@@ -1,5 +1,4 @@
-package Models;
-import models.*;
+package models;
 
 /**
  * SearchProfile test classes to test SearchProfile class
@@ -13,20 +12,22 @@ import static org.junit.Assert.assertNull;
 
 import org.junit.*;
 
+import java.util.ArrayList;
+
 
 public class SearchProfileTest {
 
-    @Test
-    public void getQueryProfiledataTest() {
-		SearchProfile searchProfile = new SearchProfile();
-		searchProfile.setQuery("Java");
-	    searchProfile.setProfiledata(new ProfileData());
-		
-		
-		assertEquals("Java", searchProfile.getQuery());
-	    assertEquals(0, String.valueOf(searchProfile.getProfiledata()));
-	}
+	@Test
+	public void getQueryProjectsTest() {
+		SearchProfile searchResult = new SearchProfile();
+		searchResult.setQuery("1234");
+		ProfileData p = new ProfileData();
+		p.setId("12345");
+		searchResult.setProfiledata(p);
 
+		assertEquals("1234", searchResult.getQuery());
+		assertEquals("12345", searchResult.getProfiledata().getId());
+	}
     
 }
 

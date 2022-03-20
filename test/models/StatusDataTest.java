@@ -1,5 +1,4 @@
-package Models;
-import models.*;
+package models;
 
 /**
  * StatusData test classes to test StatusData class

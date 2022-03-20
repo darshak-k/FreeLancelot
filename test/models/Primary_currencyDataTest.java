@@ -1,5 +1,4 @@
-package Models;
-import models.*;
+package models;
 
 
 /**
@@ -19,12 +18,13 @@ public class Primary_currencyDataTest {
     
     @Test
     public void getNameTest() {
-		Primary_currencyData name = new Primary_currencyData();
-        name.setName("USDollar");
+        ProfileData data = new ProfileData();
+        Primary_currencyData p = new Primary_currencyData();
+        p.setName("EUR");
+        data.setPrimary_currency(p);
+        assertEquals("EUR", data.getPrimary_currency().getName());
 
-        assertEquals("USDollar", name.getName());
-        
-	}
+    }
 
 
 }
