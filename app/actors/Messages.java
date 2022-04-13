@@ -1,5 +1,11 @@
 package actors;
 
+/**
+ * Actor Messages Type
+ * 
+ * @author Darshak Kachchhi, Mansi Lakhani, Apekshaba Gohil
+ */
+
 import models.SearchResult;
 
 import java.util.LinkedHashMap;
@@ -24,4 +30,27 @@ public class Messages {
         public GlobalStatsActorMessage( ) {
         }
     }
+
+    public static final class ProfileDataActorMessage{
+        public final Integer ownerId;
+        public ProfileDataActorMessage( int ownerId ) {
+            this.ownerId = ownerId;
+        }
+    }
+
+    public static final class ProfileInfoActorMessage{
+        public final Integer ownerId;
+        public ProfileInfoActorMessage( int ownerId ) {
+            this.ownerId = ownerId;
+        }
+    }
+
+    public static final class SkillsSearchActorMessage{
+        public final int query;
+        public SkillsSearchActorMessage(int query){
+            this.query = query;
+        }
+    }
+
+
 }

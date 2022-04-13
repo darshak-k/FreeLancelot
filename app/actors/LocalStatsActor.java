@@ -1,5 +1,11 @@
 package actors;
 
+/**
+ * Local stats Actor
+ * 
+ * @author Darshak Kachchhi
+ */
+
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.Props;

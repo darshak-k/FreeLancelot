@@ -310,7 +310,7 @@ public class FreelancerController extends Controller {
 	 * @param ownerID fetch result for given owner id
 	 */
 	public CompletionStage<Result> profileData(Integer ownerID) {
-		ProfileProjectsResults.clear();
+//		ProfileProjectsResults.clear();
 		ProfileResults.clear();
 
 		return ws.url(baseURL + "/users/0.1/users/" + String.valueOf(ownerID))

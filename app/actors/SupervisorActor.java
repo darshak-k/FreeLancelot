@@ -1,5 +1,11 @@
 package actors;
 
+/**
+ * Supervisor Actor
+ * 
+ * @author Apekshaba Gohil
+ */
+
 import akka.actor.*;
 import akka.japi.pf.DeciderBuilder;
 import play.libs.ws.WSClient;
@@ -48,6 +54,9 @@ public class SupervisorActor extends AbstractActor {
         final ActorRef projectSearchChildActor = getContext().actorOf(SearchActor.props(ws));
         final ActorRef localStatsChildActor = getContext().actorOf(LocalStatsActor.props(ws));
         final ActorRef globalStatsChildActor = getContext().actorOf(GlobalStatsActor.props(ws));
+        final ActorRef profileDataChildActor = getContext().actorOf(ProfileDataActor.props(ws));
+        final ActorRef profileInfoChildActor = getContext().actorOf(ProfileInfoActor.props(ws));
+        final ActorRef skillsSearchChildActor = getContext().actorOf(SearchSkillActor.props(ws));
 
         return receiveBuilder()
                 .match(Messages.SearchPageActorMessage.class, any -> {
@@ -58,6 +67,15 @@ public class SupervisorActor extends AbstractActor {
                 })
                 .match(Messages.GlobalStatsActorMessage.class, any -> {
                     globalStatsChildActor.forward(any, getContext());
+                })
+                .match(Messages.ProfileDataActorMessage.class, any-> {
+                    profileDataChildActor.forward(any, getContext());
+                })
+                .match(Messages.ProfileInfoActorMessage.class, any-> {
+                    profileInfoChildActor.forward(any, getContext());
+                })
+                .match(Messages.SkillsSearchActorMessage.class, any -> {
+                    skillsSearchChildActor.forward(any, getContext());
                 })
                 .build();
     }
