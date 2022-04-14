@@ -1,4 +1,9 @@
 package actors;
+/**
+ * SearchResultsActor test class to test SearchResultsActor
+ *
+ * @author Darshak Kachchhi , Mansi Lakhani , Apekshaba Gohil
+ */
 
 import  akka.testkit.javadsl.*;
 import models.SearchResult;
@@ -40,12 +45,12 @@ public class SearchResultsActorTest {
     }
 
 
-//    @Test(expected=NullPointerException.class)
-//    public void testSearchActorGreeting() {
-//        final TestKit testProbe = new TestKit(system);
-//        final ActorRef supervisor = system.actorOf(
-//                SearchActor.props(ws));
-//        supervisor.tell(new Messages.SearchPageActorMessage("java"), ActorRef.noSender());
-//        ArrayList<SearchResult> response = testProbe.expectMsgClass(ArrayList.class);
-//    }
+    @Test(expected=NullPointerException.class)
+    public void testSearchActorGreeting() {
+        final TestKit testProbe = new TestKit(system);
+        final ActorRef supervisor = system.actorOf(
+                SearchActor.props(ws));
+        supervisor.tell(new Messages.SearchPageActorMessage("java"), ActorRef.noSender());
+        ArrayList<SearchResult> response = testProbe.expectMsgClass(ArrayList.class);
+    }
 }

@@ -14,7 +14,7 @@
           <value>
             <ProjectSettingsEntry>
               <option name="sourceDir" value="C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\SOEN6441-FreeLancelot-DAMN-a3\SOEN6441-FreeLancelot-DAMN-a3\app" />
-              <option name="confDir" value="C:\Users\mauli\Desktop\MACS\SOEN 6441 - Advanced Programming Practices\SOEN6441-FreeLancelot-DAMN-a3\SOEN6441-FreeLancelot-DAMN-a3\app" />
+              <option name="confDir" value="C:\Users\GOHIL\Desktop\Final_AKKA\Finalcode\SOEN6441-FreeLancelot-DAMN\app" />
               <option name="templateImports">
                 <list>
                   <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
@@ -44,7 +44,7 @@
                   <option value="play.libs.F" />
                 </list>
               </option>
-              <option name="uri" value="/C:/Users/mauli/Desktop/MACS/SOEN%206441%20-%20Advanced%20Programming%20Practices/SOEN6441-FreeLancelot-DAMN-a3/SOEN6441-FreeLancelot-DAMN-a3" />
+              <option name="uri" value="/C:/Users/GOHIL/Desktop/Final_AKKA/Finalcode/SOEN6441-FreeLancelot-DAMN" />
             </ProjectSettingsEntry>
           </value>
         </entry>

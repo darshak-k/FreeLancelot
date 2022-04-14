@@ -3,7 +3,7 @@ package actors;
 /**
  * Search Skills Actor
  * 
- * @author Apekshaba Gohil
+ * @author Mansi Lakhani
  */
 
 import akka.actor.AbstractActor;

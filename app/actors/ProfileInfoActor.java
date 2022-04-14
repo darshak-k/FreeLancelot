@@ -22,7 +22,7 @@ import play.libs.ws.WSResponse;
 import models.APIResponse;
 import models.SearchResult;
 import play.mvc.Result;
-import views.html.profile;
+//import views.html.profile;
 
 import javax.inject.Inject;
 import java.time.LocalTime;

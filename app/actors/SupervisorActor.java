@@ -3,7 +3,7 @@ package actors;
 /**
  * Supervisor Actor
  * 
- * @author Apekshaba Gohil
+ * @author Darshak Kachchhi, Mansi Lakhani, Apekshaba Gohil
  */
 
 import akka.actor.*;

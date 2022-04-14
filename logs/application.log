@@ -1,198 +1,21 @@
-2022-04-13 17:36:57,766 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-9 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-04-13 22:38:30,271 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-04-13 17:36:57,823 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev) (no global state)
-2022-04-13 17:36:58,454 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,454 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,457 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,457 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,830 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,830 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,830 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,830 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,830 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,830 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,830 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,831 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:58,832 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:58,833 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:36:59,165 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:36:59,165 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:04,899 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:04,899 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,035 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-13 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,035 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-13 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,049 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,049 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,052 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,052 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,057 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,057 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,064 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,064 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:06,199 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:06,199 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,281 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-04-13 17:37:43,290 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev) (no global state)
-2022-04-13 17:37:43,378 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,378 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,481 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,481 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,481 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,481 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,482 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,483 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,486 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,486 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,492 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,492 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:43,844 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:43,844 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,427 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,427 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,715 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,715 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,719 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,719 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,733 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,733 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,741 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,741 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,745 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,746 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 17:37:52,908 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2022-04-13 17:37:52,908 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
-2022-04-13 19:39:12,884 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-6 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2022-04-13 19:39:54,236 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-6 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2022-04-13 19:42:47,996 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-7 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2022-04-13 19:50:25,922 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-9 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2022-04-13 19:56:13,738 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-9 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2022-04-13 19:58:33,833 [ERROR] from akka.actor.OneForOneStrategy in default-akka.actor.default-dispatcher-8 - null
-java.lang.NullPointerException: null
-	at actors.SearchActor.searchProjectFromWS(SearchActor.java:66)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24)
-	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20)
-	at scala.PartialFunction.applyOrElse(PartialFunction.scala:189)
-	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:188)
-	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:244)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2022-04-13 22:38:30,405 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev) (no global state)
+2022-04-13 22:38:32,236 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:32,236 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:32,236 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:32,236 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:33,154 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:33,154 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:33,154 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:33,154 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:33,154 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:33,154 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-04-13 22:38:33,154 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-9 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:33,154 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:33,154 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-11 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-04-13 22:38:33,154 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
