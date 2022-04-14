@@ -13,6 +13,8 @@ import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import models.ProcessProjects;
 import models.SearchProfile;
 import models.SearchResult;
 import play.libs.streams.ActorFlow;
@@ -31,12 +33,19 @@ import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
+import play.cache.NamedCache;
+import play.cache.SyncCacheApi;
 
 public class FreelanceController extends Controller {
+
+    @NamedCache("session-cache")
+	private SyncCacheApi cache;
+
     @Inject
     private Materializer materializer;
     public static ActorSystem actorSystem;
-
+    private List<SearchResult> searchResults = new ArrayList<SearchResult>();
+    private List<SearchResult> skillSearchResults = new ArrayList<SearchResult>();
     private List<SearchResult> ProfileProjectsResults = new ArrayList<SearchResult>();
     public List<SearchProfile> ProfileResults = new ArrayList<SearchProfile>();
 
@@ -44,10 +53,11 @@ public class FreelanceController extends Controller {
     public static WSClient ws;
 
     @Inject
-    public FreelanceController(WSClient ws, Materializer materializer, ActorSystem actorSystem) {
+    public FreelanceController(WSClient ws, Materializer materializer, ActorSystem actorSystem, SyncCacheApi cache) {
         this.materializer = materializer;
         this.actorSystem = actorSystem;
         supervisorActor = actorSystem.actorOf(SupervisorActor.props(ws), "SupervisorActor");
+        this.cache = cache;
     }
 
 //    public WebSocket ws() {
@@ -115,11 +125,25 @@ public class FreelanceController extends Controller {
      * @return Result of search URI
      */
     public CompletionStage<Result> search(String inputKeyword) {
+        Optional<List<SearchResult>> cachedSkillsResults = cache.get("cachedSearchResults");
+        if (cachedSkillsResults.isPresent()) {
+			searchResults = cachedSkillsResults.get();
+			Optional<SearchResult> previousSearchOption = ProcessProjects.getProjectByQuery(searchResults,
+					String.valueOf(inputKeyword));
+			if (previousSearchOption.isPresent()) {
+				SearchResult previousSearch = previousSearchOption.get();
+				searchResults = ProcessProjects.removeProjectResult(searchResults, String.valueOf(inputKeyword));
+				searchResults.add(0, previousSearch);
+				return CompletableFuture.completedFuture(ok(index.render(searchResults)));
+			}
+
+		}
         return FutureConverters
                 .toJava(ask(supervisorActor,
                         new Messages.SearchPageActorMessage(inputKeyword),
                         5000))
                 .thenApplyAsync(response -> {
+                    cache.set("cachedSearchResults", (List<SearchResult>) response, 15 * 60);
                     return ok(index
                             .render((List<SearchResult>) response));
                 }).toCompletableFuture();
@@ -181,11 +205,25 @@ public class FreelanceController extends Controller {
      * @return Result of search URI
      */
     public CompletionStage<Result> skills(int inputKeyword) {
+        Optional<List<SearchResult>> cachedSkillsResults = cache.get("cachedSkillsResult");
+		if (cachedSkillsResults.isPresent()) {
+			skillSearchResults = cachedSkillsResults.get();
+			Optional<SearchResult> previousSearchOption = ProcessProjects.getProjectByQuery(skillSearchResults,
+					String.valueOf(inputKeyword));
+			if (previousSearchOption.isPresent()) {
+				SearchResult previousSearch = previousSearchOption.get();
+				skillSearchResults = ProcessProjects.removeProjectResult(skillSearchResults, String.valueOf(inputKeyword));
+				skillSearchResults.add(0, previousSearch);
+				return CompletableFuture.completedFuture(ok(index.render(skillSearchResults)));
+			}
+
+		}
         return FutureConverters
                 .toJava(ask(supervisorActor,
                         new Messages.SkillsSearchActorMessage(inputKeyword),
                         5000))
                 .thenApplyAsync(response -> {
+                    cache.set("cachedSkillsResult", (List<SearchResult>) response, 15 * 60);
                     return ok(index.render((List<SearchResult>) response));
                 }).toCompletableFuture();
     }
