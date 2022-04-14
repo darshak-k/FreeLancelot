@@ -46,14 +46,14 @@ public class ProfileInfoActorTest {
         system = null;
     }
 
-//    @Test
-//	public void testProfileInfoActor() {
-//        final TestKit testProbe = new TestKit(system);
-//        final ActorRef supervisor = system.actorOf(
-//                SupervisorActor.props(ws));
-//        supervisor.tell(new Messages.ProfileInfoActorMessage(12345), ActorRef.noSender());
-//        ArrayList<SearchResult> response = testProbe.expectMsgClass(ArrayList.class);
-//        assertEquals(response.size(), 0);
-//    }
+    @Test
+	public void testProfileInfoActor() {
+        final TestKit testProbe = new TestKit(system);
+        final ActorRef supervisor = system.actorOf(
+                SupervisorActor.props(ws));
+        supervisor.tell(new Messages.ProfileInfoActorMessage(12345), ActorRef.noSender());
+        ArrayList<SearchResult> response = testProbe.expectMsgClass(ArrayList.class);
+        assertEquals(response.size(), 0);
+    }
 
 }
